@@ -1,0 +1,16 @@
+DOCTYPE html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Form
+  body
+    nav
+      a(href='/') See other puppies
+    p Tell us about your dog
+    form(method='GET', action='/puppies')
+      input#name(type='text', name='name', value='Dogs name')
+      input#age(type='text', name='age', value='dogs age')
+      input(type='url', name='url', value='')
+      button(type='submit', name='button') Submit
